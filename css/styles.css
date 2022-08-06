@@ -201,7 +201,8 @@ ul {
   column-gap: 30px;
 }
 .icon-skill-comtent {
-  /* width: 240px; */
+  width: 270px;
+  height: 120px;
   background-color: var(--tean-section-background);
   padding: 25px 100px;
   border-radius: 4px;
@@ -300,9 +301,13 @@ ul {
   gap: 10px;
 }
 
-.icon-soc-link {
+.icon-soc-item {
   width: 44px;
   height: 44px;
+}
+.icon-soc-link {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   /* background-color: #02658b; */
   display: flex;
@@ -335,9 +340,14 @@ ul {
   display: flex;
   gap: 30px;
 }
-.client-link {
+
+.client-list-item {
   width: 170px;
   height: 92px;
+}
+.client-link {
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
@@ -362,6 +372,7 @@ ul {
 .filter-list .list-item:not(:last-child) {
   margin-right: 8px;
 }
+
 .filter-btn {
   padding: 6px 22px;
   background: var(--background-filter-btn);
@@ -393,6 +404,10 @@ ul {
   min-width: calc((100% / 3)-90);
 }
 
+.portfolio-list .list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-list .item-photo {
   display: block;
 }
@@ -434,6 +449,22 @@ ul {
   margin-bottom: 20px;
 }
 
+.footer-pege .container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.footer-soc-titel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+
 .contact-address {
   display: inline-block;
   margin-bottom: 9px;
@@ -455,4 +486,9 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-soc-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-text-color);
 }
