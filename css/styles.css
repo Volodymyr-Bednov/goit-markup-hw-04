@@ -127,7 +127,9 @@ ul {
 }
 
 .link-contact {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -137,10 +139,15 @@ ul {
   color: var(--primary-text-color);
 }
 
+.icon-nav {
+  /* margin-right: 10px; */
+  fill: currentColor;
+}
 .event-link:hover,
 .event-link:focus {
   color: var(--accent-color);
 }
+
 /* ----------------- MAIN ----------------- */
 /* HERO SECTION */
 .hero {
@@ -192,6 +199,13 @@ ul {
 .skills-list {
   display: flex;
   column-gap: 30px;
+}
+.icon-skill-comtent {
+  /* width: 240px; */
+  background-color: var(--tean-section-background);
+  padding: 25px 100px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .skill-list-header {
   margin-bottom: 10px;
@@ -258,7 +272,8 @@ ul {
 
 .team-text {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
+  background-color: var(--primary-backgraund);
 }
 
 .team-member {
@@ -272,11 +287,69 @@ ul {
 }
 
 .member-info {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.icon-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* background-color: #02658b; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.icon {
+  /* margin-right: 10px; */
+  fill: currentColor;
+}
+.icon-soc-link:hover,
+.icon-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+/* CLIENTS SECTION */
+.clients-titel {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  color: #afb1b8;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* ----------------- PORTFOLIO ----------------- */
